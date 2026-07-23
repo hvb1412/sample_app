@@ -31,3 +31,33 @@
 /config/master.key
 /config/database.yml
 /test/*
+
+# Environment variables
+.env
+.env.*
+
+# SQLite databases (nếu dùng SQLite)
+/db/*.sqlite3
+/db/*.sqlite3-journal
+
+# Node modules (nếu dùng JS/CSS bundling)
+/node_modules
+
+# Package manager logs
+yarn-debug.log*
+yarn-error.log*
+npm-debug.log*
+
+# Coverage reports
+/coverage
+
+# Rails cache
+.byebug_history
+/.sass-cache
+
+# Editor / OS files
+.vscode/
+/.idea/
+*.swp
+.DS_Store
+Thumbs.db
