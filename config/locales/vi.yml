@@ -1,0 +1,49 @@
+vi:
+  layouts:
+    header:
+      title: "Ứng dụng mẫu"
+      home: "Trang chủ"
+      help: "Trợ giúp"
+      login: "Đăng nhập"
+
+  helpers:
+    application:
+      base_title: "Ứng dụng mẫu Ruby on Rails Tutorial"
+
+  products:
+    show: "Xem sản phẩm này"
+    back: "Quay lại danh sách sản phẩm"
+    edit: "Chỉnh sửa sản phẩm này"
+    destroy: "Xóa sản phẩm này"
+
+    index:
+      notice: "Thông báo"
+      products: "Sản phẩm"
+      name: "Tên"
+      no_products: "Không có sản phẩm nào"
+      new_product: "Sản phẩm mới"
+
+    product:
+      show: "Xem"
+      edit: "Chỉnh sửa"
+      destroy: "Xóa"
+
+    new:
+      new_product: "Sản phẩm mới"
+
+    show:
+      notice: "Thông báo"
+
+  static_pages:
+    home:
+      title: "TRANG CHỦ"
+      heading: "Ứng dụng mẫu"
+      description_html: "Đây là trang chủ của ứng dụng mẫu %{link}."
+      rails_tutorial: "Ruby on Rails Tutorial"
+
+    help:
+      title: "Trợ giúp"
+      heading: "Trợ giúp"
+      content_html: "Nhận trợ giúp về Ruby on Rails Tutorial tại %{help_link}. Để nhận trợ giúp về ứng dụng mẫu này, xem %{book_link}."
+      help_page: "Trang trợ giúp Rails Tutorial"
+      book: "Sách Ruby on Rails Tutorial"

@@ -1,0 +1,49 @@
+ja:
+  layouts:
+    header:
+      title: "サンプルアプリ"
+      home: "ホーム"
+      help: "ヘルプ"
+      login: "ログイン"
+
+  helpers:
+    application:
+      base_title: "Ruby on Rails Tutorial サンプルアプリ"
+
+  products:
+    show: "この商品を表示"
+    back: "商品一覧に戻る"
+    edit: "この商品を編集"
+    destroy: "この商品を削除"
+
+    index:
+      notice: "通知"
+      products: "商品"
+      name: "名前"
+      no_products: "商品がありません"
+      new_product: "新しい商品"
+
+    product:
+      show: "表示"
+      edit: "編集"
+      destroy: "削除"
+
+    new:
+      new_product: "新しい商品"
+
+    show:
+      notice: "通知"
+
+  static_pages:
+    home:
+      title: "ホーム"
+      heading: "サンプルアプリ"
+      description_html: "%{link}サンプルアプリケーションのホームページです。"
+      rails_tutorial: "Ruby on Rails Tutorial"
+
+    help:
+      title: "ヘルプ"
+      heading: "ヘルプ"
+      content_html: "Ruby on Rails Tutorialについてのヘルプは%{help_link}をご覧ください。このサンプルアプリについてのヘルプは%{book_link}をご覧ください。"
+      help_page: "Rails Tutorial ヘルプページ"
+      book: "Ruby on Rails Tutorial 本"

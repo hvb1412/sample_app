@@ -1,0 +1,26 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= link_to t(".title"), "#", id: "logo" %>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to t(".home"), "#" %></li>
+        <li><%= link_to t(".help"), "#" %></li>
+        <li><%= link_to t(".login"), "#" %></li>
+        <li class="dropdown">
+          <a href="#"
+              class="dropdown-toggle"
+              data-toggle="dropdown"
+              role="button">
+            <%= I18n.locale.upcase %>
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><%= link_to "EN", url_for(locale: :en) %></li>
+            <li><%= link_to "JA", url_for(locale: :ja) %></li>
+            <li><%= link_to "VI", url_for(locale: :vi) %></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
