@@ -1,0 +1,19 @@
+available_locales:
+  en: "en"
+  ja: "ja"
+  vi: "vi"
+
+static_pages:
+  home:
+    rails_tutorial_link: "http://www.railstutorial.org/"
+
+  help:
+    help_link: "http://www.railstutorial.org/help"
+    book_link: "http://www.railstutorial.org/book"
+
+user:
+  email:
+    regex: '\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z'
+    max_length: 255
+  name:
+    max_length: 50
