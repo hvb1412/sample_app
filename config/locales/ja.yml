@@ -1,49 +1,65 @@
 ja:
-  layouts:
-    header:
-      title: "サンプルアプリ"
-      home: "ホーム"
-      help: "ヘルプ"
-      login: "ログイン"
+  activerecord:
+    attributes:
+      user:
+        name: "名前"
+        email: "メールアドレス"
+        password: "パスワード"
+        password_confirmation: "パスワード確認"
+
+  errors:
+    format: "%{attribute}%{message}"
+
+    messages:
+      accepted: "を受諾してください"
+      blank: "を入力してください"
+      confirmation: "と一致しません"
+      empty: "を入力してください"
+      invalid: "の形式が正しくありません"
+
+  flash:
+    success:
+      create: "ユーザーの作成に成功しました。"
+
+    danger:
+      user_not_found: "ユーザーが見つかりません。"
 
   helpers:
     application:
-      base_title: "Ruby on Rails Tutorial サンプルアプリ"
+      base_title: "Ruby on Railsチュートリアル サンプルアプリ"
 
-  products:
-    show: "この商品を表示"
-    back: "商品一覧に戻る"
-    edit: "この商品を編集"
-    destroy: "この商品を削除"
-
-    index:
-      notice: "通知"
-      products: "商品"
-      name: "名前"
-      no_products: "商品がありません"
-      new_product: "新しい商品"
-
-    product:
-      show: "表示"
-      edit: "編集"
-      destroy: "削除"
-
-    new:
-      new_product: "新しい商品"
-
-    show:
-      notice: "通知"
+  layouts:
+    header:
+      help: "ヘルプ"
+      home: "ホーム"
+      login: "ログイン"
+      title: "サンプルアプリ"
 
   static_pages:
-    home:
-      title: "ホーム"
-      heading: "サンプルアプリ"
-      description_html: "%{link}サンプルアプリケーションのホームページです。"
-      rails_tutorial: "Ruby on Rails Tutorial"
-
     help:
-      title: "ヘルプ"
+      book: "Ruby on Railsチュートリアルの本"
+      content_html: "Ruby on Railsチュートリアルの%{help_link}でヘルプを取得できます。このサンプルアプリについては%{book_link}を参照してください。"
+      help_page: "Railsチュートリアルのヘルプページ"
       heading: "ヘルプ"
-      content_html: "Ruby on Rails Tutorialについてのヘルプは%{help_link}をご覧ください。このサンプルアプリについてのヘルプは%{book_link}をご覧ください。"
-      help_page: "Rails Tutorial ヘルプページ"
-      book: "Ruby on Rails Tutorial 本"
+      title: "ヘルプ"
+
+    home:
+      description_html: "これは%{link}サンプルアプリケーションのホームページです。"
+      heading: "サンプルアプリ"
+      rails_tutorial: "Ruby on Railsチュートリアル"
+      title: "ホーム"
+
+  shared:
+    error_messages:
+      the_form_contains: "フォームには"
+      error: "%{count}件のエラーがあります"
+
+  users:
+    new:
+      confirmation: "パスワード確認"
+      create: "アカウントを作成"
+      email: "メールアドレス"
+      name: "名前"
+      password: "パスワード"
+      signup: "登録"
+      title: "登録"

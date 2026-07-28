@@ -1,49 +1,65 @@
 vi:
-  layouts:
-    header:
-      title: "Ứng dụng mẫu"
-      home: "Trang chủ"
-      help: "Trợ giúp"
-      login: "Đăng nhập"
+  activerecord:
+    attributes:
+      user:
+        name: "Tên"
+        email: "Email"
+        password: "Mật khẩu"
+        password_confirmation: "Xác nhận mật khẩu"
+
+  errors:
+    format: "%{attribute} %{message}"
+
+    messages:
+      accepted: "phải được chấp nhận"
+      blank: "không được để trống"
+      confirmation: "không khớp"
+      empty: "không được để trống"
+      invalid: "không hợp lệ"
+
+  flash:
+    success:
+      create: "Tạo người dùng thành công."
+
+    danger:
+      user_not_found: "Không tìm thấy người dùng."
 
   helpers:
     application:
-      base_title: "Ứng dụng mẫu Ruby on Rails Tutorial"
+      base_title: "Ứng dụng mẫu Hướng dẫn Ruby on Rails"
 
-  products:
-    show: "Xem sản phẩm này"
-    back: "Quay lại danh sách sản phẩm"
-    edit: "Chỉnh sửa sản phẩm này"
-    destroy: "Xóa sản phẩm này"
-
-    index:
-      notice: "Thông báo"
-      products: "Sản phẩm"
-      name: "Tên"
-      no_products: "Không có sản phẩm nào"
-      new_product: "Sản phẩm mới"
-
-    product:
-      show: "Xem"
-      edit: "Chỉnh sửa"
-      destroy: "Xóa"
-
-    new:
-      new_product: "Sản phẩm mới"
-
-    show:
-      notice: "Thông báo"
+  layouts:
+    header:
+      help: "Trợ giúp"
+      home: "Trang chủ"
+      login: "Đăng nhập"
+      title: "Ứng dụng mẫu"
 
   static_pages:
-    home:
-      title: "TRANG CHỦ"
-      heading: "Ứng dụng mẫu"
-      description_html: "Đây là trang chủ của ứng dụng mẫu %{link}."
-      rails_tutorial: "Ruby on Rails Tutorial"
-
     help:
-      title: "Trợ giúp"
+      book: "Sách hướng dẫn Ruby on Rails"
+      content_html: "Nhận trợ giúp về Hướng dẫn Ruby on Rails tại %{help_link}. Để nhận trợ giúp về ứng dụng mẫu này, hãy xem %{book_link}."
+      help_page: "Trang trợ giúp Hướng dẫn Rails"
       heading: "Trợ giúp"
-      content_html: "Nhận trợ giúp về Ruby on Rails Tutorial tại %{help_link}. Để nhận trợ giúp về ứng dụng mẫu này, xem %{book_link}."
-      help_page: "Trang trợ giúp Rails Tutorial"
-      book: "Sách Ruby on Rails Tutorial"
+      title: "Trợ giúp"
+
+    home:
+      description_html: "Đây là trang chủ của ứng dụng mẫu %{link}."
+      heading: "Ứng dụng mẫu"
+      rails_tutorial: "Hướng dẫn Ruby on Rails"
+      title: "TRANG CHỦ"
+
+  shared:
+    error_messages:
+      the_form_contains: "Biểu mẫu có"
+      error: "%{count} lỗi"
+
+  users:
+    new:
+      confirmation: "Xác nhận mật khẩu"
+      create: "Tạo tài khoản"
+      email: "Email"
+      name: "Tên"
+      password: "Mật khẩu"
+      signup: "Đăng ký"
+      title: "Đăng ký"

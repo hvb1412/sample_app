@@ -3,6 +3,9 @@ available_locales:
   ja: "ja"
   vi: "vi"
 
+gravatar:
+  url: "https://secure.gravatar.com/avatar"
+
 static_pages:
   home:
     rails_tutorial_link: "http://www.railstutorial.org/"
