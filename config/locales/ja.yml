@@ -20,9 +20,12 @@ ja:
   flash:
     success:
       create: "ユーザーの作成に成功しました。"
+      logout: "ログアウトしました"
+      login: "ログインしました"
 
     danger:
       user_not_found: "ユーザーが見つかりません。"
+      invalid_email_password: "メールアドレスまたはパスワードが正しくありません"
 
   helpers:
     application:
@@ -34,6 +37,21 @@ ja:
       home: "ホーム"
       login: "ログイン"
       title: "サンプルアプリ"
+      users: "ユーザー"
+      account: "アカウント"
+      profile: "プロフィール"
+      settings: "設定"
+      logout: "ログアウト"
+      login: "ログイン"
+
+  sessions:
+    new:
+      title: "ログイン"
+      email: "メールアドレス"
+      password: "パスワード"
+      log_in: "ログイン"
+      new_user: "新規ユーザーですか？"
+      sign_up_now: "今すぐ登録！"
 
   static_pages:
     help:

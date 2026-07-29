@@ -33,9 +33,12 @@ en:
   flash:
     success:
       create: "User created successfully."
+      logout: "Log out user successfully"
+      login: "User log in successfully"
 
     danger:
       user_not_found: "User not found."
+      invalid_email_password: "Invalid Email or Password"
 
   helpers:
     application:
@@ -47,6 +50,21 @@ en:
       home: "Home"
       login: "Log in"
       title: "Sample App"
+      users: "Users"
+      account: "Account"
+      profile: "Profile"
+      settings: "Settings"
+      logout: "Log out"
+      login: "Log in"
+
+  sessions:
+    new:
+      title: "Log in"
+      email: "Email"
+      password: "Password"
+      log_in: "Log in"
+      new_user: "New user?"
+      sign_up_now: "Sign up now?"
 
   static_pages:
     help:
