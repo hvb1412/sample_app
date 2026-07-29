@@ -16,6 +16,8 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
+      reset_session
+      log_in @user
       flash[:success] = t("flash.success.create")
       redirect_to user_path(@user, locale: I18n.locale)
     else

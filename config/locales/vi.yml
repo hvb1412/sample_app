@@ -20,9 +20,12 @@ vi:
   flash:
     success:
       create: "Tạo người dùng thành công."
+      logout: "Đăng xuất thành công"
+      login: "Đăng nhập thành công"
 
     danger:
       user_not_found: "Không tìm thấy người dùng."
+      invalid_email_password: "Email hoặc mật khẩu không chính xác"
 
   helpers:
     application:
@@ -34,6 +37,21 @@ vi:
       home: "Trang chủ"
       login: "Đăng nhập"
       title: "Ứng dụng mẫu"
+      users: "Người dùng"
+      account: "Tài khoản"
+      profile: "Hồ sơ"
+      settings: "Cài đặt"
+      logout: "Đăng xuất"
+      login: "Đăng nhập"
+
+  sessions:
+    new:
+      title: "Đăng nhập"
+      email: "Email"
+      password: "Mật khẩu"
+      log_in: "Đăng nhập"
+      new_user: "Người dùng mới?"
+      sign_up_now: "Đăng ký ngay!"
 
   static_pages:
     help:
