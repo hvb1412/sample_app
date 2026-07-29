@@ -30,52 +30,48 @@
 # available at https://guides.rubyonrails.org/i18n.html.
 
 en:
-  layouts:
-    header:
-      title: "Sample App"
-      home: "Home"
-      help: "Help"
-      login: "Log in"
+  flash:
+    success:
+      create: "User created successfully."
+
+    danger:
+      user_not_found: "User not found."
 
   helpers:
     application:
       base_title: "Ruby on Rails Tutorial Sample App"
 
-  products:
-    show: "Show this product"
-    back: "Back to products"
-    edit: "Edit this product"
-    destroy: "Destroy this product"
-
-    index:
-      notice: "notice"
-      products: "Products"
-      name: "Name"
-      no_products: "No Products"
-      new_product: "New Product"
-
-    product:
-      show: "Show"
-      edit: "Edit"
-      destroy: "Destroy"
-
-    new:
-      new_product: "New Product"
-
-    show:
-      notice: "notice"
+  layouts:
+    header:
+      help: "Help"
+      home: "Home"
+      login: "Log in"
+      title: "Sample App"
 
   static_pages:
-    home:
-      title: "HOME"
-      heading: "Sample App"
-      description_html: "This is the home page for the %{link} sample application."
-      rails_tutorial: "Ruby on Rails Tutorial"
-
     help:
-      title: "Help"
-      heading: "Help"
-      content_html:
-        "Get help on the Ruby on Rails Tutorial at the %{help_link}. To get help on this sample app, see the %{book_link}."
-      help_page: "Rails Tutorial help page"
       book: "Ruby on Rails Tutorial book"
+      content_html: "Get help on the Ruby on Rails Tutorial at the %{help_link}. To get help on this sample app, see the %{book_link}."
+      help_page: "Rails Tutorial help page"
+      heading: "Help"
+      title: "Help"
+
+    home:
+      description_html: "This is the home page for the %{link} sample application."
+      heading: "Sample App"
+      rails_tutorial: "Ruby on Rails Tutorial"
+      title: "HOME"
+  shared:
+    error_messages:
+      the_form_contains: "The form contains"
+      error: "error"
+
+  users:
+    new:
+      confirmation: "Confirmation"
+      create: "Create my account"
+      email: "Email"
+      name: "Name"
+      password: "Password"
+      signup: "Signup"
+      title: "Sign up"
