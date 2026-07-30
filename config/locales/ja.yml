@@ -52,6 +52,8 @@ ja:
       log_in: "ログイン"
       new_user: "新規ユーザーですか？"
       sign_up_now: "今すぐ登録！"
+      remember_me: "ログイン状態を保持する"
+      remember_on_device: "このデバイスでログイン状態を保持する"
 
   static_pages:
     help:
