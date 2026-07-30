@@ -35,10 +35,18 @@ en:
       create: "User created successfully."
       logout: "Log out user successfully"
       login: "User log in successfully"
+      update: "User updated successfully"
+      deleted: "User deleted"
 
     danger:
       user_not_found: "User not found."
       invalid_email_password: "Invalid Email or Password"
+      pls_login: "Please Log in!"
+      delete_fail: "Delete fail"
+      invalid_activation: "Invalid activation link"
+
+    error:
+      not_current_user: "You cannot edit this account."
 
   helpers:
     application:
@@ -87,11 +95,26 @@ en:
       error: "error"
 
   users:
-    new:
-      confirmation: "Confirmation"
-      create: "Create my account"
-      email: "Email"
+    edit:
+      title: "Edit user"
+      main_title: "Update your profile"
+      save_changes: "Save changes"
+      change: "Change"
+
+    form:
       name: "Name"
+      email: "Email"
       password: "Password"
+      password_confirmation: "Password Confirmation"
+
+    index:
+      title: "All users"
+
+    new:
+      create: "Create my account"
       signup: "Signup"
       title: "Sign up"
+
+    user:
+      delete: "Delete"
+      delete_confirm: "Are you sure?"

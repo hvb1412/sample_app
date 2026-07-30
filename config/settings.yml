@@ -5,6 +5,9 @@ available_locales:
 
 gravatar:
   url: "https://secure.gravatar.com/avatar"
+  emails: "https://gravatar.com/emails"
+  size: 80
+  list_size: 50
 
 static_pages:
   home:
@@ -20,3 +23,9 @@ user:
     max_length: 255
   name:
     max_length: 50
+
+pagy:
+  items: 10
+
+password:
+  minimum: 6

@@ -22,10 +22,19 @@ vi:
       create: "Tạo người dùng thành công."
       logout: "Đăng xuất thành công"
       login: "Đăng nhập thành công"
+      update: "Cập nhật thông tin người dùng thành công"
+      deleted: "Đã xóa người dùng thành công"
 
     danger:
       user_not_found: "Không tìm thấy người dùng."
       invalid_email_password: "Email hoặc mật khẩu không chính xác"
+      pls_login: "Vui lòng đăng nhập để tiếp tục!"
+      delete_fail: "Xóa người dùng thất bại"
+      invalid_activation: "Liên kết kích hoạt không hợp lệ"
+
+    error:
+      not_current_user: "Bạn không có quyền chỉnh sửa tài khoản này."
+
 
   helpers:
     application:
@@ -75,11 +84,26 @@ vi:
       error: "%{count} lỗi"
 
   users:
-    new:
-      confirmation: "Xác nhận mật khẩu"
-      create: "Tạo tài khoản"
+    edit:
+      title: "Chỉnh sửa người dùng"
+      main_title: "Cập nhật hồ sơ của bạn"
+      save_changes: "Lưu thay đổi"
+      change: "Thay đổi"
+
+    form:
+      name: "Họ và tên"
       email: "Email"
-      name: "Tên"
       password: "Mật khẩu"
+      password_confirmation: "Xác nhận mật khẩu"
+
+    index:
+      title: "Danh sách người dùng"
+
+    new:
+      create: "Tạo tài khoản"
       signup: "Đăng ký"
       title: "Đăng ký"
+
+    user:
+      delete: "Xóa"
+      delete_confirm: "Bạn có chắc chắn không?"
