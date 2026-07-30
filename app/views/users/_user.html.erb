@@ -1,5 +1,5 @@
 <li>
-  <%= gravatar_for user, Settings.gravatar.list_size %>
+  <%= gravatar_for user, size: Settings.gravatar.list_size %>
   <%= link_to user.name, user %>
   <% if can_destroy_user? user %>
     | <%= link_to t(".delete"), user,

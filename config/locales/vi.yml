@@ -24,6 +24,7 @@ vi:
       login: "Đăng nhập thành công"
       update: "Cập nhật thông tin người dùng thành công"
       deleted: "Đã xóa người dùng thành công"
+      activated: "Tài khoản đã được kích hoạt!"
 
     danger:
       user_not_found: "Không tìm thấy người dùng."
@@ -35,6 +36,11 @@ vi:
     error:
       not_current_user: "Bạn không có quyền chỉnh sửa tài khoản này."
 
+    info:
+      mail_notif: "Vui lòng kiểm tra email để kích hoạt tài khoản của bạn."
+
+    warning:
+      not_activate: "Tài khoản chưa được kích hoạt. Vui lòng kiểm tra email để kích hoạt tài khoản!"
 
   helpers:
     application:
@@ -52,6 +58,14 @@ vi:
       settings: "Cài đặt"
       logout: "Đăng xuất"
       login: "Đăng nhập"
+
+  user_mailer:
+    mail_content: "Kích hoạt tài khoản"
+    account_activation:
+      greeting: "Xin chào %{name},"
+      welcome: "Chào mừng bạn đến với Sample App! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
+      subject: "Kích hoạt tài khoản"
+      activate: "Kích hoạt"
 
   sessions:
     new:

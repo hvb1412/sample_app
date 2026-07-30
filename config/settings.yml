@@ -9,6 +9,9 @@ gravatar:
   size: 80
   list_size: 50
 
+mailer:
+  default_from: "noreply@example.com"
+
 static_pages:
   home:
     rails_tutorial_link: "http://www.railstutorial.org/"
