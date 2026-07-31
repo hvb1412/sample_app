@@ -8,6 +8,10 @@ class User < ApplicationRecord
   validates :email, presence: true,
     length: {maximum: Settings.user.email.max_length},
     format: {with: VALID_EMAIL_REGEX}, uniqueness: true
+  validates :password, presence: true,
+length: {minimum: Settings.password.minimum}, allow_nil: true
+
+  scope :latest, ->{order(created_at: :desc)}
 
   has_secure_password
 

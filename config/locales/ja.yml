@@ -22,10 +22,18 @@ ja:
       create: "ユーザーの作成に成功しました。"
       logout: "ログアウトしました"
       login: "ログインしました"
+      update: "ユーザー情報を更新しました"
+      deleted: "ユーザーを削除しました"
+      invalid_activation: "無効なアカウント有効化リンクです。"
 
     danger:
       user_not_found: "ユーザーが見つかりません。"
       invalid_email_password: "メールアドレスまたはパスワードが正しくありません"
+      pls_login: "ログインしてください！"
+      delete_fail: "ユーザーの削除に失敗しました"
+
+    error:
+      not_current_user: "このアカウントを編集する権限がありません。"
 
   helpers:
     application:
@@ -75,11 +83,26 @@ ja:
       error: "%{count}件のエラーがあります"
 
   users:
-    new:
-      confirmation: "パスワード確認"
-      create: "アカウントを作成"
+    edit:
+      title: "ユーザー編集"
+      main_title: "プロフィールを更新"
+      save_changes: "変更を保存"
+      change: "変更"
+
+    form:
+      name: "氏名"
       email: "メールアドレス"
-      name: "名前"
       password: "パスワード"
+      password_confirmation: "パスワード（確認）"
+
+    index:
+      title: "ユーザー一覧"
+
+    new:
+      create: "アカウントを作成"
       signup: "登録"
       title: "登録"
+
+    user:
+      delete: "削除"
+      delete_confirm: "本当に削除しますか？"

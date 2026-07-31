@@ -61,3 +61,4 @@ npm-debug.log*
 *.swp
 .DS_Store
 Thumbs.db
+/config/application.yml

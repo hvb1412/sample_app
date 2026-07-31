@@ -7,7 +7,7 @@ class SessionsController < ApplicationController
       log_in user
       params.dig(:session, :remember_me) == "1" ? remember(user) : forget(user)
       flash[:success] = t("flash.success.login")
-      redirect_to user_path(user, locale: I18n.locale)
+      redirect_back_or user_path(user, locale: I18n.locale)
     else
       render_login_error
     end
