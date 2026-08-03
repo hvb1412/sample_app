@@ -32,3 +32,4 @@ pagy:
 
 password:
   minimum: 6
+  reset_expired: 2

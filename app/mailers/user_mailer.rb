@@ -13,4 +13,14 @@ class UserMailer < ApplicationMailer
       )
     end
   end
+
+  def password_reset user
+    @user = user
+    I18n.with_locale(params[:locale]) do
+      mail(
+        to: @user.email,
+        subject: t(".subject")
+      )
+    end
+  end
 end

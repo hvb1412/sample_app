@@ -25,6 +25,7 @@ vi:
       update: "Cập nhật thông tin người dùng thành công"
       deleted: "Đã xóa người dùng thành công"
       activated: "Tài khoản đã được kích hoạt!"
+      pwd_change_success: "Mật khẩu đã được thay đổi thành công."
 
     danger:
       user_not_found: "Không tìm thấy người dùng."
@@ -32,6 +33,8 @@ vi:
       pls_login: "Vui lòng đăng nhập để tiếp tục!"
       delete_fail: "Xóa người dùng thất bại"
       invalid_activation: "Liên kết kích hoạt không hợp lệ"
+      inactive: "Người dùng đang không hoạt động!"
+      check_pwd_expired: "Yêu cầu đặt lại mật khẩu đã hết hạn."
 
     error:
       not_current_user: "Bạn không có quyền chỉnh sửa tài khoản này."
@@ -66,6 +69,13 @@ vi:
       welcome: "Chào mừng bạn đến với Sample App! Nhấp vào liên kết bên dưới để kích hoạt tài khoản của bạn:"
       subject: "Kích hoạt tài khoản"
       activate: "Kích hoạt"
+    password_reset:
+      subject: "Đặt lại mật khẩu"
+      title: "Đặt lại mật khẩu"
+      reset_password: "Đặt lại mật khẩu"
+      instructions: "Để đặt lại mật khẩu, hãy nhấp vào liên kết bên dưới:"
+      expire: "Liên kết này sẽ hết hạn sau hai giờ."
+      ignore: "Nếu bạn không yêu cầu đặt lại mật khẩu, hãy bỏ qua email này và mật khẩu của bạn sẽ được giữ nguyên."
 
   sessions:
     new:
@@ -77,6 +87,7 @@ vi:
       sign_up_now: "Đăng ký ngay!"
       remember_me: "Ghi nhớ tôi"
       remember_on_device: "Ghi nhớ tôi trên thiết bị này"
+      forgot_password: "Quên mật khẩu?"
 
   static_pages:
     help:
@@ -96,6 +107,25 @@ vi:
     error_messages:
       the_form_contains: "Biểu mẫu có"
       error: "%{count} lỗi"
+
+  password_resets:
+    new:
+      title: "Quên mật khẩu"
+      email: "Email"
+      submit: "Gửi"
+
+    edit:
+      error: "Mật khẩu không được để trống."
+      submit: "Gửi"
+      title: "Quên mật khẩu"
+
+    update:
+      error: "Mật khẩu không được để trống."
+
+    create:
+      create_info: "Hướng dẫn đặt lại mật khẩu đã được gửi đến email của bạn."
+      create_danger: "Không tìm thấy địa chỉ email."
+
 
   users:
     edit:
