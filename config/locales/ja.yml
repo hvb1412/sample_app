@@ -27,6 +27,7 @@ ja:
       update: "ユーザー情報を更新しました"
       deleted: "ユーザーを削除しました"
       invalid_activation: "無効なアカウント有効化リンクです。"
+      pwd_change_success: "パスワードが正常に変更されました。"
 
     danger:
       user_not_found: "ユーザーが見つかりません。"
@@ -34,6 +35,8 @@ ja:
       pls_login: "ログインしてください！"
       delete_fail: "ユーザーの削除に失敗しました"
       invalid_active: "アカウント有効化リンクが無効です"
+      inactive: "ユーザーは無効です！"
+      check_pwd_expired: "パスワードリセットの有効期限が切れています。"
 
     error:
       not_current_user: "このアカウントを編集する権限がありません。"
@@ -68,6 +71,13 @@ ja:
       welcome: "Sample Appへようこそ。以下のリンクをクリックしてアカウントを有効化してください。"
       subject: "アカウントの有効化"
       activate: "アカウントを有効化する"
+    password_reset:
+      subject: "パスワードのリセット"
+      title: "パスワードのリセット"
+      reset_password: "パスワードをリセットする"
+      instructions: "パスワードをリセットするには、以下のリンクをクリックしてください。"
+      expire: "このリンクは2時間後に期限切れになります。"
+      ignore: "パスワードのリセットを要求していない場合は、このメールを無視してください。パスワードは変更されません。"
 
   sessions:
     new:
@@ -79,6 +89,7 @@ ja:
       sign_up_now: "今すぐ登録！"
       remember_me: "ログイン状態を保持する"
       remember_on_device: "このデバイスでログイン状態を保持する"
+      forgot_password: "パスワードをお忘れですか？"
 
   static_pages:
     help:
@@ -98,6 +109,24 @@ ja:
     error_messages:
       the_form_contains: "フォームには"
       error: "%{count}件のエラーがあります"
+
+  password_resets:
+    new:
+      title: "パスワードをお忘れですか？"
+      email: "メールアドレス"
+      submit: "送信"
+
+    edit:
+      error: "パスワードを入力してください。"
+      submit: "送信"
+      title: "パスワードをお忘れですか？"
+
+    update:
+      error: "パスワードを入力してください。"
+
+    create:
+      create_info: "パスワードリセットの手順をメールで送信しました。"
+      create_danger: "メールアドレスが見つかりません。"
 
   users:
     edit:

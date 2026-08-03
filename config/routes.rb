@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-
   scope "(:locale)", locale: /en|ja|vi/, defaults: { locale: "en" } do
     get "/login", to: "sessions#new"
     post "/login", to: "sessions#create"
@@ -11,6 +10,7 @@ Rails.application.routes.draw do
     get "/signup", to: "users#new"
     post "/signup", to: "users#create"
     resources :users
+    resources :password_resets, only: %i(new create edit update)
     resources :account_activations, only: :edit
   end
 end
