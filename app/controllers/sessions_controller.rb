@@ -3,14 +3,11 @@ class SessionsController < ApplicationController
 
   def create
     user = find_user
-    if user.try(:authenticate, params.dig(:session, :password))
-      log_in user
-      params.dig(:session, :remember_me) == "1" ? remember(user) : forget(user)
-      flash[:success] = t("flash.success.login")
-      redirect_back_or user_path(user, locale: I18n.locale)
-    else
-      render_login_error
-    end
+
+    return render_login_error unless authenticated?(user)
+    return redirect_not_activated unless user.activated
+
+    login_user(user)
   end
 
   def destroy
@@ -23,6 +20,30 @@ class SessionsController < ApplicationController
 
   def find_user
     User.find_by(email: params.dig(:session, :email)&.downcase)
+  end
+
+  def authenticated? user
+    user&.authenticate(params.dig(:session, :password))
+  end
+
+  def login_user user
+    log_in user
+    remember_or_forget(user)
+    flash[:success] = t("flash.success.login")
+    redirect_back_or user_path(user, locale: I18n.locale)
+  end
+
+  def remember_or_forget user
+    if params.dig(:session, :remember_me) == "1"
+      remember(user)
+    else
+      forget(user)
+    end
+  end
+
+  def redirect_not_activated
+    flash[:warning] = t("flash.warning.not_activate")
+    redirect_to root_url(locale: I18n.locale)
   end
 
   def render_login_error

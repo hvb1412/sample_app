@@ -5,7 +5,7 @@ class UsersController < ApplicationController
   before_action :admin_user, only: :destroy
 
   def index
-    @pagy, @users = pagy(User.latest, Settings.pagy.items)
+    @pagy, @users = pagy(User.latest, items: Settings.pagy.items)
   end
 
   def show; end
@@ -18,10 +18,13 @@ class UsersController < ApplicationController
     @user = User.new user_params
 
     if @user.save
-      reset_session
-      log_in @user
-      flash[:success] = t("flash.success.create")
-      redirect_to user_path(@user, locale: I18n.locale)
+      @user.send_activation_email(params[:locale])
+      flash[:info] = t("flash.info.mail_notif")
+      redirect_to root_url(locale: I18n.locale, status: :see_other)
+      # reset_session
+      # log_in @user
+      # flash[:success] = t("flash.success.create")
+      # redirect_to user_path(@user, locale: I18n.locale)
     else
       render :new
     end
@@ -59,10 +62,7 @@ class UsersController < ApplicationController
 
   def find_user
     @user = User.find_by id: params[:id]
-    return if @user
-
-    flash[:danger] = t("flash.danger.user_not_found")
-    redirect_to root_path(locale: I18n.locale)
+    redirect_to root_path(locale: I18n.locale) unless @user
   end
 
   def correct_user

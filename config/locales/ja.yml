@@ -6,6 +6,7 @@ ja:
         email: "メールアドレス"
         password: "パスワード"
         password_confirmation: "パスワード確認"
+        taken: "メールアドレスは既に使用されています"
 
   errors:
     format: "%{attribute}%{message}"
@@ -16,6 +17,7 @@ ja:
       confirmation: "と一致しません"
       empty: "を入力してください"
       invalid: "の形式が正しくありません"
+      taken: "は既に使用されています"
 
   flash:
     success:
@@ -31,9 +33,16 @@ ja:
       invalid_email_password: "メールアドレスまたはパスワードが正しくありません"
       pls_login: "ログインしてください！"
       delete_fail: "ユーザーの削除に失敗しました"
+      invalid_active: "アカウント有効化リンクが無効です"
 
     error:
       not_current_user: "このアカウントを編集する権限がありません。"
+
+    info:
+      mail_notif: "アカウントを有効化するためのメールを送信しました。メールをご確認ください。"
+
+    warning:
+      not_activate: "アカウントが有効化されていません。認証メールをご確認ください。"
 
   helpers:
     application:
@@ -51,6 +60,14 @@ ja:
       settings: "設定"
       logout: "ログアウト"
       login: "ログイン"
+
+  user_mailer:
+    mail_content: "アカウント有効化"
+    account_activation:
+      greeting: "%{name}さん、こんにちは。"
+      welcome: "Sample Appへようこそ。以下のリンクをクリックしてアカウントを有効化してください。"
+      subject: "アカウントの有効化"
+      activate: "アカウントを有効化する"
 
   sessions:
     new:

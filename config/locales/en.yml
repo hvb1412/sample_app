@@ -37,6 +37,7 @@ en:
       login: "User log in successfully"
       update: "User updated successfully"
       deleted: "User deleted"
+      activated: "Account activated!"
 
     danger:
       user_not_found: "User not found."
@@ -47,6 +48,12 @@ en:
 
     error:
       not_current_user: "You cannot edit this account."
+
+    info:
+      mail_notif: "Please check your email to activate your account."
+
+    warning:
+      not_activate: "Account not activated. Check your email for the activation!"
 
   helpers:
     application:
@@ -64,6 +71,14 @@ en:
       settings: "Settings"
       logout: "Log out"
       login: "Log in"
+
+  user_mailer:
+    mail_content: "Account Activation"
+    account_activation:
+      greeting: "Hi %{name},"
+      welcome: "Welcome to the Sample App! Click on the link below to activate your account:"
+      subject: "Account Activation"
+      activate: "Activate"
 
   sessions:
     new:
