@@ -1,5 +1,5 @@
 <%= form_for @user, url: @user.new_record? ? users_path(locale: I18n.locale) : user_path(@user, locale: I18n.locale), html: { data: { turbo: false } } do |f| %>
-  <%= render "shared/error_messages" %>
+  <%= render "shared/error_messages", object: f.object %>
   <%= f.label :name, t(".name") %>
   <%= f.text_field :name, class: "form-control" %>
   <%= f.label :email, t(".email") %>

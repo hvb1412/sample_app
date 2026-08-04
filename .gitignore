@@ -64,3 +64,6 @@ Thumbs.db
 
 # Ignore application configuration
 /config/application.yml
+
+# Ignore uploaded test images
+/storage

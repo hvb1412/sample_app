@@ -39,6 +39,8 @@ en:
       deleted: "User deleted"
       activated: "Account activated!"
       pwd_change_success: "Password has been changed successfully."
+      micropost: "Micropost created!"
+      micropost_delete: "Micropost deleted!"
 
     danger:
       user_not_found: "User not found."
@@ -48,6 +50,7 @@ en:
       invalid_activation: "Invalid activation link"
       inactive: "User is inactive!"
       check_pwd_expired: "Password reset has expired."
+      micropost_invalid: "Micropost invalid"
 
     error:
       not_current_user: "You cannot edit this account."
@@ -57,6 +60,11 @@ en:
 
     warning:
       not_activate: "Account not activated. Check your email for the activation!"
+
+  javascript:
+    custom:
+      image_upload:
+        max_file_size: "Maximum file size is 5MB. Please choose a smaller file."
 
   helpers:
     application:
@@ -74,6 +82,14 @@ en:
       settings: "Settings"
       logout: "Log out"
       login: "Log in"
+
+  microposts:
+    micropost:
+      posted: "Posted %{time} ago."
+      delete: "delete"
+      confirm: "You sure?"
+      invalid_image_format: "must be a valid image format"
+      less_than_5_mb: "should be less than 5MB"
 
   user_mailer:
     mail_content: "Account Activation"
@@ -115,10 +131,19 @@ en:
       heading: "Sample App"
       rails_tutorial: "Ruby on Rails Tutorial"
       title: "HOME"
+      post_title: "Micropost Feed"
+
   shared:
     error_messages:
       the_form_contains: "The form contains"
       error: "error"
+
+    micropost_form:
+      placeholder: "Compose new micropost..."
+      submit: "Post"
+
+    user_info:
+      view_profile: "View my profile"
 
   password_resets:
     new:

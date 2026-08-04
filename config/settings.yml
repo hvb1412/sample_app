@@ -12,6 +12,10 @@ gravatar:
 mailer:
   default_from: "noreply@example.com"
 
+digit_140: 140
+digit_5: 5
+digit_500: 500
+
 static_pages:
   home:
     rails_tutorial_link: "http://www.railstutorial.org/"
@@ -33,3 +37,10 @@ pagy:
 password:
   minimum: 6
   reset_expired: 2
+
+image:
+  micropost:
+    content_types:
+      - image/jpeg
+      - image/gif
+      - image/png

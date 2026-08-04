@@ -7,6 +7,40 @@ vi:
         password: "Mật khẩu"
         password_confirmation: "Xác nhận mật khẩu"
 
+  datetime:
+    distance_in_words:
+      less_than_x_minutes:
+        one: "ít hơn %{count} phút"
+        other: "ít hơn %{count} phút"
+
+      x_minutes:
+        one: "%{count} phút"
+        other: "%{count} phút"
+
+      about_x_hours:
+        one: "khoảng %{count} giờ"
+        other: "khoảng %{count} giờ"
+
+      x_days:
+        one: "%{count} ngày"
+        other: "%{count} ngày"
+
+      about_x_months:
+        one: "khoảng %{count} tháng"
+        other: "khoảng %{count} tháng"
+
+      x_months:
+        one: "%{count} tháng"
+        other: "%{count} tháng"
+
+      about_x_years:
+        one: "khoảng %{count} năm"
+        other: "khoảng %{count} năm"
+
+      over_x_years:
+        one: "hơn %{count} năm"
+        other: "hơn %{count} năm"
+
   errors:
     format: "%{attribute} %{message}"
 
@@ -26,6 +60,8 @@ vi:
       deleted: "Đã xóa người dùng thành công"
       activated: "Tài khoản đã được kích hoạt!"
       pwd_change_success: "Mật khẩu đã được thay đổi thành công."
+      micropost: "Đăng bài thành công!"
+      micropost_delete: "Đã xóa bài viết."
 
     danger:
       user_not_found: "Không tìm thấy người dùng."
@@ -35,6 +71,7 @@ vi:
       invalid_activation: "Liên kết kích hoạt không hợp lệ"
       inactive: "Người dùng đang không hoạt động!"
       check_pwd_expired: "Yêu cầu đặt lại mật khẩu đã hết hạn."
+      micropost_invalid: "Không thể xóa bài viết."
 
     error:
       not_current_user: "Bạn không có quyền chỉnh sửa tài khoản này."
@@ -61,6 +98,15 @@ vi:
       settings: "Cài đặt"
       logout: "Đăng xuất"
       login: "Đăng nhập"
+
+  microposts:
+    micropost:
+      posted: "Đã đăng %{time} trước."
+      delete: "xóa"
+      confirm: "Bạn có chắc chắn không?"
+      invalid_image_format: "phải có định dạng ảnh hợp lệ"
+      less_than_5_mb: "phải nhỏ hơn 5MB"
+      posted: "Đã đăng %{time} trước."
 
   user_mailer:
     mail_content: "Kích hoạt tài khoản"
@@ -102,11 +148,19 @@ vi:
       heading: "Ứng dụng mẫu"
       rails_tutorial: "Hướng dẫn Ruby on Rails"
       title: "TRANG CHỦ"
+      post_title: "Bảng tin bài đăng"
 
   shared:
     error_messages:
       the_form_contains: "Biểu mẫu có"
       error: "%{count} lỗi"
+
+    micropost_form:
+      placeholder: "Bạn đang nghĩ gì?"
+      submit: "Đăng"
+
+    user_info:
+      view_profile: "Xem hồ sơ"
 
   password_resets:
     new:

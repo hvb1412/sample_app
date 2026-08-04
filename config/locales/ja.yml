@@ -8,6 +8,40 @@ ja:
         password_confirmation: "パスワード確認"
         taken: "メールアドレスは既に使用されています"
 
+  datetime:
+    distance_in_words:
+      less_than_x_minutes:
+        one: "%{count}分未満"
+        other: "%{count}分未満"
+
+      x_minutes:
+        one: "%{count}分"
+        other: "%{count}分"
+
+      about_x_hours:
+        one: "%{count}時間前後"
+        other: "%{count}時間前後"
+
+      x_days:
+        one: "%{count}日"
+        other: "%{count}日"
+
+      about_x_months:
+        one: "%{count}ヶ月前後"
+        other: "%{count}ヶ月前後"
+
+      x_months:
+        one: "%{count}ヶ月"
+        other: "%{count}ヶ月"
+
+      about_x_years:
+        one: "%{count}年前後"
+        other: "%{count}年前後"
+
+      over_x_years:
+        one: "%{count}年以上"
+        other: "%{count}年以上"
+
   errors:
     format: "%{attribute}%{message}"
 
@@ -28,6 +62,8 @@ ja:
       deleted: "ユーザーを削除しました"
       invalid_activation: "無効なアカウント有効化リンクです。"
       pwd_change_success: "パスワードが正常に変更されました。"
+      micropost: "投稿を作成しました！"
+      micropost_delete: "投稿を削除しました。"
 
     danger:
       user_not_found: "ユーザーが見つかりません。"
@@ -37,6 +73,7 @@ ja:
       invalid_active: "アカウント有効化リンクが無効です"
       inactive: "ユーザーは無効です！"
       check_pwd_expired: "パスワードリセットの有効期限が切れています。"
+      micropost_invalid: "投稿を削除できませんでした。"
 
     error:
       not_current_user: "このアカウントを編集する権限がありません。"
@@ -51,6 +88,11 @@ ja:
     application:
       base_title: "Ruby on Railsチュートリアル サンプルアプリ"
 
+  javascript:
+    custom:
+      image_upload:
+        max_file_size: "最大ファイルサイズは%{size}です。より小さいファイルを選択してください。"
+
   layouts:
     header:
       help: "ヘルプ"
@@ -63,6 +105,15 @@ ja:
       settings: "設定"
       logout: "ログアウト"
       login: "ログイン"
+
+  microposts:
+    micropost:
+      posted: "%{time}前に投稿されました。"
+      delete: "削除"
+      confirm: "本当に削除しますか？"
+      invalid_image_format: "有効な画像形式である必要があります"
+      less_than_5_mb: "5MB未満である必要があります"
+      posted: "%{time}に投稿されました。"
 
   user_mailer:
     mail_content: "アカウント有効化"
@@ -104,11 +155,19 @@ ja:
       heading: "サンプルアプリ"
       rails_tutorial: "Ruby on Railsチュートリアル"
       title: "ホーム"
+      post_title: "投稿一覧"
 
   shared:
     error_messages:
       the_form_contains: "フォームには"
       error: "%{count}件のエラーがあります"
+
+    micropost_form:
+      placeholder: "いま何を考えていますか？"
+      submit: "投稿"
+
+    user_info:
+      view_profile: "プロフィールを見る"
 
   password_resets:
     new:
