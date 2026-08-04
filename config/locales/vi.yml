@@ -65,6 +65,7 @@ vi:
 
     danger:
       user_not_found: "Không tìm thấy người dùng."
+      relationship_not_found: "Không tìm thấy quan hệ theo dõi."
       invalid_email_password: "Email hoặc mật khẩu không chính xác"
       pls_login: "Vui lòng đăng nhập để tiếp tục!"
       delete_fail: "Xóa người dùng thất bại"
@@ -162,6 +163,10 @@ vi:
     user_info:
       view_profile: "Xem hồ sơ"
 
+    stats:
+      following: "đang theo dõi"
+      followers: "người theo dõi"
+
   password_resets:
     new:
       title: "Quên mật khẩu"
@@ -205,3 +210,21 @@ vi:
     user:
       delete: "Xóa"
       delete_confirm: "Bạn có chắc chắn không?"
+
+    followers:
+      followers: "Người theo dõi"
+    following:
+      following: "Đang theo dõi"
+
+    show_follow:
+      followers: "Người theo dõi"
+      following: "Đang theo dõi"
+      no_followers: "Chưa có người theo dõi."
+      no_following: "Chưa theo dõi ai."
+      microposts: "Bài viết: "
+
+    unfollow:
+      unfollow: "Bỏ theo dõi"
+
+    follow:
+      follow: "Theo dõi"

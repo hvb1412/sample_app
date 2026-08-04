@@ -67,6 +67,7 @@ ja:
 
     danger:
       user_not_found: "ユーザーが見つかりません。"
+      relationship_not_found: "フォロー関係が見つかりません。"
       invalid_email_password: "メールアドレスまたはパスワードが正しくありません"
       pls_login: "ログインしてください！"
       delete_fail: "ユーザーの削除に失敗しました"
@@ -169,6 +170,10 @@ ja:
     user_info:
       view_profile: "プロフィールを見る"
 
+    stats:
+      following: "フォロー中"
+      followers: "フォロワー"
+
   password_resets:
     new:
       title: "パスワードをお忘れですか？"
@@ -211,3 +216,21 @@ ja:
     user:
       delete: "削除"
       delete_confirm: "本当に削除しますか？"
+
+    followers:
+      followers: "フォロワー"
+    following:
+      following: "フォロー中"
+
+    show_follow:
+      followers: "フォロワー"
+      following: "フォロー中"
+      no_followers: "フォロワーはいません。"
+      no_following: "まだ誰もフォローしていません。"
+      microposts: "投稿: "
+
+    unfollow:
+      unfollow: "フォロー解除"
+
+    follow:
+      follow: "フォローする"
