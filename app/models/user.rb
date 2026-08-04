@@ -6,6 +6,8 @@ class User < ApplicationRecord
 
   attr_accessor :remember_token, :activation_token, :reset_token
 
+  has_many :microposts, dependent: :destroy
+
   validates :name, presence: true,
     length: {maximum: Settings.user.name.max_length}
   validates :email, presence: true,
@@ -72,6 +74,10 @@ class User < ApplicationRecord
   # Sends activation email
   def send_activation_email locale
     UserMailer.with(locale:).account_activation(self).deliver_now
+  end
+
+  def feed
+    microposts.newest
   end
 
   private

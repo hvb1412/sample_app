@@ -76,8 +76,10 @@ group :test do
   gem "webdrivers"
 end
 
+gem "active_storage_validations", "0.9.8"
 gem "bcrypt", "~> 3.1.7"
 gem "config", "~> 5.6"
 gem "faker", "2.21.0"
 gem "figaro"
+gem "image_processing", "1.12.2"
 gem "pagy", "~> 6.0"
