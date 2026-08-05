@@ -44,6 +44,7 @@ en:
 
     danger:
       user_not_found: "User not found."
+      relationship_not_found: "Relationship not found."
       invalid_email_password: "Invalid Email or Password"
       pls_login: "Please Log in!"
       delete_fail: "Delete fail"
@@ -145,6 +146,10 @@ en:
     user_info:
       view_profile: "View my profile"
 
+    stats:
+      following: "following"
+      followers: "followers"
+
   password_resets:
     new:
       title: "Forgot Password"
@@ -187,3 +192,21 @@ en:
     user:
       delete: "Delete"
       delete_confirm: "Are you sure?"
+
+    followers:
+      followers: "Followers"
+    following:
+      following: "Following"
+
+    show_follow:
+      followers: "Followers"
+      following: "Following"
+      no_followers: "No followers yet."
+      no_following: "Not following anyone yet."
+      microposts: "Microposts: "
+
+    unfollow:
+      unfollow: "Unfollow"
+
+    follow:
+      follow: "Follow"
